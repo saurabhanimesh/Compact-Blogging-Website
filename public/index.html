@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Sneha Vikash</title>
+    <link rel="styleSheet" href="home.css">
+    <link rel="icon" href="iconlogo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-storage.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+</head>
+
+<body>
+    <header id="home">
+        <nav class="navbar" id="navbarid">
+            
+            <div class="navlist" id="navid">
+                <li class="navitem" id="home"><a href=#home>Home</a></li>
+                <li class="navitem" id="myblog"><a href=#blog>Blog</a></li>
+                <li class="navitem" id="shopitem"><a href=#shop>Shop</a></li>
+                <li class="navitem" id="bookme"><a href=#hire>Hire</a></li>
+                <li class="navitem" id="aboutme"><a href=#about>About</a></li>
+            </div>
+            <img id="leftsidelogo" src="svlogo.png" alt="Logo">
+            <div id="socialHandles">
+                <a id="facebookhandle" href="https://www.facebook.com/rebelliousdreamer.rd" target="_blank"><img
+                        class="handles" id="facebookhandleimage" src="facebook.png" alt="facebook"></a>
+                <a id="instahandle" href="https://www.instagram.com/rebelliousdreamer01" target="_blank"><img
+                        class="handles" id="instahandleimage" src="instagram.png" alt="instagram"></a>
+                <a id="twitterhandle" href="https://www.twitter.com/rebeldreamer01" target="_blank"><img class="handles"
+                        id="twitterhandleimage" src="twitter.png" alt="twitter"></a>
+                <a id="youtubehandle" href="https://www.youtube.com/channel/UCakMQB2QBbJP3EI9OfqTTIw"
+                    target="_blank"><img class="handles" id="youtubehandleimage" src="youtube.png" alt="youtube"></a>
+            </div>
+            <!-- <div class="burger" id="burger">
+            <div class="line" id="line"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+        </div> -->
+        </nav>
+        <section class="homescreen">
+            <div id="reviewhomebody">
+                <div id="reviewhomebox">
+                    <div class="reviewperson" id="review1">
+                        <h1 class="reviewname" id="reviewName1"></h1>
+                        <div id="starsRate1">
+                        </div>
+                        <p class="reviewcomment" id="review1comment1"></p>
+                    </div>
+                </div>
+            </div>
+            <p id="quotemain" class="mainquote">Rebel, To Achieve Your Dreams.</p>
+        </section>
+    </header>
+
+    <section class="blogsec" id="blog">
+        <div class="blogbox">
+            <h1 class="latestblogtitle">My Latest Blogs</h1>
+            <p class="blogquote">Opportunities Don’t Happen, You Create Them</p>
+            <div class="bloghomepage" id="bloghomepage">
+                <div class="bloghomepageimages" id="bloghomepageimages">
+                    <div class="latestblogimage1" id="latestblogimage1" data-aos="flip-right" data-aos-offset="0"
+                        data-aos-delay="0" data-aos-duration="800" data-aos-easing="ease-in-out"
+                        data-aos-anchor-placement="top-center">
+                        <img id="blog1imageconnect" loading="lazy" src="" alt="Latest Blog1">
+                        <h1 id="headingblog1"></h1>
+                        <p id="contentblog1"></p>
+                        <!-- yeha pe aayega latest blog ka short form....server se -->
+                        <div id="blogbuttons">
+                            <button id="viewfullblog1">read more</button>
+                            <button id="sharesocail1">share</button>
+                            <!-- Sharingbutton Facebook -->
+                        </div>
+                        <div class="sharingplatforms1" id="sharingplatforms1">
+                            <!-- Sharingbutton Facebook -->
+                            <a class="resp-sharing-button__link"
+                                href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Frebelliousdreamer.com%2F"
+                                target="_blank" rel="noopener" aria-label="">
+                                <div
+                                    class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+                                    <div aria-hidden="true"
+                                        class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Sharingbutton Twitter -->
+                            <a class="resp-sharing-button__link"
+                                href="https://twitter.com/intent/tweet/?text=Check%20out%20the%20Latest%20Blogs%20of%20Sneha%20Vikash.%20She&#x27;s%20a%20Genius%20when%20it%20comes%20to%20writing%20and%20expressing%2C%20you%20must%20go%20through%20her%20blogs%20to%20see%20the%20beauty%20and%20intensity%20of%20her%20thoughts.&amp;url=https%3A%2F%2Frebelliousdreamer.com%2F"
+                                target="_blank" rel="noopener" aria-label="">
+                                <div
+                                    class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+                                    <div aria-hidden="true"
+                                        class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Sharingbutton E-Mail -->
+                            <a class="resp-sharing-button__link"
+                                href="mailto:?subject=Check%20out%20the%20Latest%20Blogs%20of%20Sneha%20Vikash.%20She&#x27;s%20a%20Genius%20when%20it%20comes%20to%20writing%20and%20expressing%2C%20you%20must%20go%20through%20her%20blogs%20to%20see%20the%20beauty%20and%20intensity%20of%20her%20thoughts.&amp;body=https%3A%2F%2Frebelliousdreamer.com%2F"
+                                target="_self" rel="noopener" aria-label="">
+                                <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small">
+                                    <div aria-hidden="true"
+                                        class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M22 4H2C.9 4 0 4.9 0 6v12c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM7.25 14.43l-3.5 2c-.08.05-.17.07-.25.07-.17 0-.34-.1-.43-.25-.14-.24-.06-.55.18-.68l3.5-2c.24-.14.55-.06.68.18.14.24.06.55-.18.68zm4.75.07c-.1 0-.2-.03-.27-.08l-8.5-5.5c-.23-.15-.3-.46-.15-.7.15-.22.46-.3.7-.14L12 13.4l8.23-5.32c.23-.15.54-.08.7.15.14.23.07.54-.16.7l-8.5 5.5c-.08.04-.17.07-.27.07zm8.93 1.75c-.1.16-.26.25-.43.25-.08 0-.17-.02-.25-.07l-3.5-2c-.24-.13-.32-.44-.18-.68s.44-.32.68-.18l3.5 2c.24.13.32.44.18.68z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Sharingbutton WhatsApp -->
+                            <a class="resp-sharing-button__link"
+                                href="whatsapp://send?text=Check%20out%20the%20Latest%20Blogs%20of%20Sneha%20Vikash.%20She&#x27;s%20a%20Genius%20when%20it%20comes%20to%20writing%20and%20expressing%2C%20you%20must%20go%20through%20her%20blogs%20to%20see%20the%20beauty%20and%20intensity%20of%20her%20thoughts.%20https%3A%2F%2Frebelliousdreamer.com%2F"
+                                target="_blank" rel="noopener" aria-label="">
+                                <div
+                                    class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small">
+                                    <div aria-hidden="true"
+                                        class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M20.1 3.9C17.9 1.7 15 .5 12 .5 5.8.5.7 5.6.7 11.9c0 2 .5 3.9 1.5 5.6L.6 23.4l6-1.6c1.6.9 3.5 1.3 5.4 1.3 6.3 0 11.4-5.1 11.4-11.4-.1-2.8-1.2-5.7-3.3-7.8zM12 21.4c-1.7 0-3.3-.5-4.8-1.3l-.4-.2-3.5 1 1-3.4L4 17c-1-1.5-1.4-3.2-1.4-5.1 0-5.2 4.2-9.4 9.4-9.4 2.5 0 4.9 1 6.7 2.8 1.8 1.8 2.8 4.2 2.8 6.7-.1 5.2-4.3 9.4-9.5 9.4zm5.1-7.1c-.3-.1-1.7-.9-1.9-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1s-1.2-.5-2.3-1.4c-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6s.3-.3.4-.5c.2-.1.3-.3.4-.5.1-.2 0-.4 0-.5C10 9 9.3 7.6 9 7c-.1-.4-.4-.3-.5-.3h-.6s-.4.1-.7.3c-.3.3-1 1-1 2.4s1 2.8 1.1 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.3-.3-.4-.6-.5z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="latestblogimage2" id="latestblogimage2" data-aos="fade-up" data-aos-offset="0"
+                        data-aos-delay="0" data-aos-duration="800" data-aos-easing="ease-in-out"
+                        data-aos-anchor-placement="top-center">
+                        <img id="blog2imageconnect" loading="lazy" src="" alt="Latest Blog2">
+                        <h1 id="headingblog2"></h1>
+                        <p id="contentblog2"></p>
+                        <!-- yeha pe aayega latest blog ka short form....server se -->
+                        <div id="blogbuttons2">
+                            <button id="viewfullblog2">read more</button>
+                            <button id="sharesocail2">share</button>
+                            <!-- Sharingbutton Facebook -->
+                        </div>
+                        <div class="sharingplatforms2" id="sharingplatforms2">
+                            <!-- Sharingbutton Facebook -->
+                            <a class="resp-sharing-button__link"
+                                href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Frebelliousdreamer.com%2F"
+                                target="_blank" rel="noopener" aria-label="">
+                                <div
+                                    class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+                                    <div aria-hidden="true"
+                                        class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Sharingbutton Twitter -->
+                            <a class="resp-sharing-button__link"
+                                href="https://twitter.com/intent/tweet/?text=Check%20out%20the%20Latest%20Blogs%20of%20Sneha%20Vikash.%20She&#x27;s%20a%20Genius%20when%20it%20comes%20to%20writing%20and%20expressing%2C%20you%20must%20go%20through%20her%20blogs%20to%20see%20the%20beauty%20and%20intensity%20of%20her%20thoughts.&amp;url=https%3A%2F%2Frebelliousdreamer.com%2F"
+                                target="_blank" rel="noopener" aria-label="">
+                                <div
+                                    class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+                                    <div aria-hidden="true"
+                                        class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Sharingbutton E-Mail -->
+                            <a class="resp-sharing-button__link"
+                                href="mailto:?subject=Check%20out%20the%20Latest%20Blogs%20of%20Sneha%20Vikash.%20She&#x27;s%20a%20Genius%20when%20it%20comes%20to%20writing%20and%20expressing%2C%20you%20must%20go%20through%20her%20blogs%20to%20see%20the%20beauty%20and%20intensity%20of%20her%20thoughts.&amp;body=https%3A%2F%2Frebelliousdreamer.com%2F"
+                                target="_self" rel="noopener" aria-label="">
+                                <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small">
+                                    <div aria-hidden="true"
+                                        class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M22 4H2C.9 4 0 4.9 0 6v12c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM7.25 14.43l-3.5 2c-.08.05-.17.07-.25.07-.17 0-.34-.1-.43-.25-.14-.24-.06-.55.18-.68l3.5-2c.24-.14.55-.06.68.18.14.24.06.55-.18.68zm4.75.07c-.1 0-.2-.03-.27-.08l-8.5-5.5c-.23-.15-.3-.46-.15-.7.15-.22.46-.3.7-.14L12 13.4l8.23-5.32c.23-.15.54-.08.7.15.14.23.07.54-.16.7l-8.5 5.5c-.08.04-.17.07-.27.07zm8.93 1.75c-.1.16-.26.25-.43.25-.08 0-.17-.02-.25-.07l-3.5-2c-.24-.13-.32-.44-.18-.68s.44-.32.68-.18l3.5 2c.24.13.32.44.18.68z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Sharingbutton WhatsApp -->
+                            <a class="resp-sharing-button__link"
+                                href="whatsapp://send?text=Check%20out%20the%20Latest%20Blogs%20of%20Sneha%20Vikash.%20She&#x27;s%20a%20Genius%20when%20it%20comes%20to%20writing%20and%20expressing%2C%20you%20must%20go%20through%20her%20blogs%20to%20see%20the%20beauty%20and%20intensity%20of%20her%20thoughts.%20https%3A%2F%2Frebelliousdreamer.com%2F"
+                                target="_blank" rel="noopener" aria-label="">
+                                <div
+                                    class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small">
+                                    <div aria-hidden="true"
+                                        class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M20.1 3.9C17.9 1.7 15 .5 12 .5 5.8.5.7 5.6.7 11.9c0 2 .5 3.9 1.5 5.6L.6 23.4l6-1.6c1.6.9 3.5 1.3 5.4 1.3 6.3 0 11.4-5.1 11.4-11.4-.1-2.8-1.2-5.7-3.3-7.8zM12 21.4c-1.7 0-3.3-.5-4.8-1.3l-.4-.2-3.5 1 1-3.4L4 17c-1-1.5-1.4-3.2-1.4-5.1 0-5.2 4.2-9.4 9.4-9.4 2.5 0 4.9 1 6.7 2.8 1.8 1.8 2.8 4.2 2.8 6.7-.1 5.2-4.3 9.4-9.5 9.4zm5.1-7.1c-.3-.1-1.7-.9-1.9-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1s-1.2-.5-2.3-1.4c-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6s.3-.3.4-.5c.2-.1.3-.3.4-.5.1-.2 0-.4 0-.5C10 9 9.3 7.6 9 7c-.1-.4-.4-.3-.5-.3h-.6s-.4.1-.7.3c-.3.3-1 1-1 2.4s1 2.8 1.1 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.3-.3-.4-.6-.5z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="latestblogimage3" id="latestblogimage3" data-aos="flip-left" data-aos-offset="0"
+                        data-aos-delay="0" data-aos-duration="800" data-aos-easing="ease-in-out"
+                        data-aos-anchor-placement="top-center">
+                        <img id="blog3imageconnect" loading="lazy" src="" alt="Latest Blog3">
+                        <h1 id="headingblog3"></h1>
+                        <p id="contentblog3"></p>
+                        <!-- yeha pe aayega latest blog ka short form....server se -->
+                        <div id="blogbuttons3">
+                            <button id="viewfullblog3">read more</button>
+                            <button id="sharesocail3">share</button>
+                        </div>
+                        <div class="sharingplatforms3" id="sharingplatforms3">
+                            <!-- Sharingbutton Facebook -->
+                            <a class="resp-sharing-button__link"
+                                href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Frebelliousdreamer.com%2F"
+                                target="_blank" rel="noopener" aria-label="">
+                                <div
+                                    class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+                                    <div aria-hidden="true"
+                                        class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Sharingbutton Twitter -->
+                            <a class="resp-sharing-button__link"
+                                href="https://twitter.com/intent/tweet/?text=Check%20out%20the%20Latest%20Blogs%20of%20Sneha%20Vikash.%20She&#x27;s%20a%20Genius%20when%20it%20comes%20to%20writing%20and%20expressing%2C%20you%20must%20go%20through%20her%20blogs%20to%20see%20the%20beauty%20and%20intensity%20of%20her%20thoughts.&amp;url=https%3A%2F%2Frebelliousdreamer.com%2F"
+                                target="_blank" rel="noopener" aria-label="">
+                                <div
+                                    class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+                                    <div aria-hidden="true"
+                                        class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Sharingbutton E-Mail -->
+                            <a class="resp-sharing-button__link"
+                                href="mailto:?subject=Check%20out%20the%20Latest%20Blogs%20of%20Sneha%20Vikash.%20She&#x27;s%20a%20Genius%20when%20it%20comes%20to%20writing%20and%20expressing%2C%20you%20must%20go%20through%20her%20blogs%20to%20see%20the%20beauty%20and%20intensity%20of%20her%20thoughts.&amp;body=https%3A%2F%2Frebelliousdreamer.com%2F"
+                                target="_self" rel="noopener" aria-label="">
+                                <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small">
+                                    <div aria-hidden="true"
+                                        class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M22 4H2C.9 4 0 4.9 0 6v12c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM7.25 14.43l-3.5 2c-.08.05-.17.07-.25.07-.17 0-.34-.1-.43-.25-.14-.24-.06-.55.18-.68l3.5-2c.24-.14.55-.06.68.18.14.24.06.55-.18.68zm4.75.07c-.1 0-.2-.03-.27-.08l-8.5-5.5c-.23-.15-.3-.46-.15-.7.15-.22.46-.3.7-.14L12 13.4l8.23-5.32c.23-.15.54-.08.7.15.14.23.07.54-.16.7l-8.5 5.5c-.08.04-.17.07-.27.07zm8.93 1.75c-.1.16-.26.25-.43.25-.08 0-.17-.02-.25-.07l-3.5-2c-.24-.13-.32-.44-.18-.68s.44-.32.68-.18l3.5 2c.24.13.32.44.18.68z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Sharingbutton WhatsApp -->
+                            <a class="resp-sharing-button__link"
+                                href="whatsapp://send?text=Check%20out%20the%20Latest%20Blogs%20of%20Sneha%20Vikash.%20She&#x27;s%20a%20Genius%20when%20it%20comes%20to%20writing%20and%20expressing%2C%20you%20must%20go%20through%20her%20blogs%20to%20see%20the%20beauty%20and%20intensity%20of%20her%20thoughts.%20https%3A%2F%2Frebelliousdreamer.com%2F"
+                                target="_blank" rel="noopener" aria-label="">
+                                <div
+                                    class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small">
+                                    <div aria-hidden="true"
+                                        class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M20.1 3.9C17.9 1.7 15 .5 12 .5 5.8.5.7 5.6.7 11.9c0 2 .5 3.9 1.5 5.6L.6 23.4l6-1.6c1.6.9 3.5 1.3 5.4 1.3 6.3 0 11.4-5.1 11.4-11.4-.1-2.8-1.2-5.7-3.3-7.8zM12 21.4c-1.7 0-3.3-.5-4.8-1.3l-.4-.2-3.5 1 1-3.4L4 17c-1-1.5-1.4-3.2-1.4-5.1 0-5.2 4.2-9.4 9.4-9.4 2.5 0 4.9 1 6.7 2.8 1.8 1.8 2.8 4.2 2.8 6.7-.1 5.2-4.3 9.4-9.5 9.4zm5.1-7.1c-.3-.1-1.7-.9-1.9-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1s-1.2-.5-2.3-1.4c-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6s.3-.3.4-.5c.2-.1.3-.3.4-.5.1-.2 0-.4 0-.5C10 9 9.3 7.6 9 7c-.1-.4-.4-.3-.5-.3h-.6s-.4.1-.7.3c-.3.3-1 1-1 2.4s1 2.8 1.1 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.3-.3-.4-.6-.5z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- ye teeno images update karne hai bad me backend se -->
+                </div>
+                <!-- <a href="" class="viewmoreblog">View More</a> -->
+            </div>
+            <!-- <img src="myblog.jpg" alt="blog"> -->
+            <div id="npblogs">
+                <button id="previousblog">previous</button>
+                <button id="nextblog">next</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="shopsec" id="shop">
+        <div class="shopbox" id="shopbox">
+            <h1 class="shopheading">My Latest Creation</h1>
+            <div class="homebookdetail" id="homebookdetail">
+                <img id="sellbook" loading="lazy" src="" alt="Latest Book">
+                <div class="hireform" id="hireform">
+                    <input type="name" id="clientname" placeholder="Name">
+                    <input type="email" id="clientemail" placeholder="Email Address">
+                    <input type="number" id="clientnumber" placeholder="Phone Number">
+                    <!-- <input type="text" name="clienttext" id="clienttext" placeholder="Purpose For Hiring"> -->
+                    <textarea id="clienttext" cols="30" rows="10" placeholder="Address of Delivery"></textarea>
+                    <button id="hiresubmitshop" class="hiresubmitshop">BUY NOW</button>
+                    <p class="thankyoumessage1" id="thankyoumessage1"></p>
+                    <p class="thankyoumessage2" id="thankyoumessage2"></p>
+                </div>
+                <!-- shopnowhome pura hamesa server se update wala chiz hai -->
+            </div>
+        </div>
+    </section>
+
+    <section class="xshopsec" id="hire">
+        <div class="xshopbox" id="xshopbox">
+            <h1 class="xshopheading">HIRE</h1>
+            <div class="xhomebookdetail">
+                <img id="hireImgae" loading="lazy" src="" alt="Latest Book">
+                <div class="xhireform">
+                    <input type="name" name="clientname" id="xclientname" placeholder="Name">
+                    <input type="email" name="clientemail" id="xclientemail" placeholder="Email Address">
+                    <input type="number" name="clientnumber" id="xclientnumber" placeholder="Phone Number">
+                    <!-- <input type="text" name="clienttext" id="clienttext" placeholder="Purpose For Hiring"> -->
+                    <textarea name="clientpurpose" id="xclienttext" cols="30" rows="10"
+                        placeholder="Purpose of Hiring"></textarea>
+                    <button id="hiresubmit" class="hiresubmit">HIRE NOW</button>
+                    <p class="xthankyoumessage1" id="xthankyoumessage1"></p>
+                    <p class="xthankyoumessage2" id="xthankyoumessage2"></p>
+                </div>
+                <!-- shopnowhome pura hamesa server se update wala chiz hai -->
+            </div>
+        </div>
+    </section>
+
+    <section class="eshopsec" id="about">
+        <div class="eshopbox">
+            <h1 class="eshopheading">About</h1>
+            <div class="ehomebookdetail">
+                <img id="aboutImage" loading="lazy" src="" alt="Latest Book">
+                <div class="eshopnowhome" id="eshopnowhome">
+                    <p id="aboutcontent"></p>
+                    <p id="aboutEmail">Email : sneha.v0105@gmail.com</p>
+                    <div id="socialHandlesx">
+                        <a id="facebookhandlex" href="https://www.facebook.com/rebelliousdreamer.rd"
+                            target="_blank"><img class="handlesx" id="facebookhandleimagex" src="facebook.png"
+                                alt="facebook"></a>
+                        <a id="instahandlex" href="https://www.instagram.com/rebelliousdreamer01" target="_blank"><img
+                                class="handlesx" id="instahandleimagex" src="instagram.png" alt="instagram"></a>
+                        <a id="twitterhandlex" href="https://www.twitter.com/rebeldreamer01" target="_blank"><img
+                                class="handlesx" id="twitterhandleimagex" src="twitter.png" alt="twitter"></a>
+                        <a id="youtubehandlex" href="https://www.youtube.com/channel/UCakMQB2QBbJP3EI9OfqTTIw"
+                            target="_blank"><img class="handlesx" id="youtubehandleimagex" src="youtube.png"
+                                alt="youtube"></a>
+                    </div>
+                    <button id="disclaimer">Disclaimer</button>
+                    <!-- <p>Disclaimer : The content on this page is the personal opinion of the writer and it is not to offend anyone.</p> -->
+                </div>
+                <!-- shopnowhome pura hamesa server se update wala chiz hai -->
+            </div>
+        </div>
+    </section>
+    <div id="copyrightsection">
+        <p>© 2020 Sneha Vikash. All Rights Reserved.</p>
+    </div>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <script>
+        $(window).on("load", function () {
+            $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
+    <script>
+        AOS.init();
+
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 400, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
+    <script src="homebrain.js"></script>
+</body>
+
+</html>
